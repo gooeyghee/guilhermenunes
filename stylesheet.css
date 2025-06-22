@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Neue Haas Unica";
+    src: url(fonts/NeueHaasUnicaPro-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Haas Unica";
+    src: url(fonts/NeueHaasUnicaPro-Bold.otf);
+    font-weight: bold;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+    transition: 0.5s;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+body {
+    background-color: black;
+    font-family: "Neue Haas Unica";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    z-index: 1;
+}
+
+.title {
+    color:black;;
+    font-size: 36pt;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titlemenu {
+    color:white;;
+    font-size: 36pt;
+    position: relative;
+}
+
+.nameheader {
+    color:black;;
+    font-size: 24pt;
+    position: relative;
+    align-items: left;
+    text-align: left;
+}
+
+.sketch {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    display:flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.menuheader {
+    color: black;
+    text-align: center;
+    font-size: 14pt;
+    display:flex;
+    z-index: 1;
+
+}
+
+.menubox {
+    background-color: white;
+    position: absolute;
+    align-content: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu > div {
+    background-color: black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.menu > li {
+    background-color: black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.menu > div:hover {
+    color: crimson;
+    transition: 0.5s;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+.project {
+    background-color: black;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: white;
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    transition: 0.5s;
+    margin-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    color:white;
+}
+
+.project:hover {
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 0px;
+    color:black;
+}
+
+.projecttitle {
+    font-size: 32pt;
+    padding-left: 1%;
+}
+
+.projectdescription {
+    font-weight: normal;
+    font-size: 14pt;
+    padding-left: 1%;
+}
+
+footer {
+    background-color: black;
+    position: sticky;
+    width:100%;
+    left:0;
+    bottom:0;
+    font-size: 18pt;
+    text-align: right;
+    color:white;
+}
+
+footer > div {
+    padding:5px;
+}
+
+#follower {
+    position: fixed;
+    width: 300px;
+    display: none;
+    pointer-events: none;
+    z-index: 9999;
+}

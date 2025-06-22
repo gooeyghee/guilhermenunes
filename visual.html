@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VISUAL</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<script src='https://unpkg.com/hydra-synth'></script>
+	<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+	
+	<header>
+        <div class="titlemenu" style="padding-left: 1%; font-size: 32pt;">
+           <a href="index.html"> GUILHERME NUNES  </a> >> VISUAL // <a href="about.html"> ABOUT </a> // <a href="audio.html"> AUDIO </a> </a>
+        </div>
+	</header>
+	
+	
+	
+	<section class="projects">
+		
+		
+		<div class="project" id="glitchProject">
+			<div class="projectpreview" id="follower"> <img src="media/visual/mesh.png"> </div>
+			<div class="projecttitle"> Glitching in Terminal </div>
+			<div class="projectdescription"> June 2025 // Digital Processes </div>
+		</div>
+		
+		<div class="project">
+			<div class="projecttitle"> Kuppel in Motion </div>
+			<div class="projectdescription"> May 2025 // Motion Design </div>
+		</div>
+		
+		<div class="project">
+			<div class="projecttitle"> Self-Portraits </div>
+			<div class="projectdescription"> May 2025 // 3D Sculpting </div>
+		</div>
+		
+		<div class="project">
+			<div class="projecttitle"> Ffmpeg & Datamosh </div>
+			<div class="projectdescription"> April 2025 // Creative Coding </div>
+		</div>
+		
+		<div class="project">
+			<div class="projecttitle"> Multiplied by Negative One </div>
+			<div class="projectdescription"> April 2025 // Creative Coding </div>
+		</div>
+
+		<div class="project">
+			<div class="projecttitle"> NO SIGNAL </div>
+			<div class="projectdescription"> January 2025 // Typography </div>
+		</div>		
+
+		<div class="project">
+			<div class="projecttitle"> Cave Paintings </div>
+			<div class="projectdescription"> January 2025 // AR/VR Photography </div>
+		</div>
+
+		<div class="project">
+			<div class="projecttitle"> Zornig </div>
+			<div class="projectdescription"> December 2024 // Motion Design </div>
+		</div>
+		
+		<div class="project">
+			<div class="projecttitle"> Sleep Paralysis </div>
+			<div class="projectdescription"> October 2024 // Video </div>
+		</div>
+		
+		
+	</section>
+	
+	<footer>
+		<div> guilhermejosenunes02@gmail.com </div>
+    </footer>
+
+  <script>
+    const follower = document.getElementById("follower");
+    const glitchProject = document.getElementById("glitchProject");
+
+    // Track mouse
+    document.addEventListener("mousemove", (e) => {
+      follower.style.left = e.clientX + 20 + "px";
+      follower.style.top = e.clientY + 20 + "px";
+    });
+
+    // Show image on hover
+    glitchProject.addEventListener("mouseenter", () => {
+      follower.style.display = "block";
+    });
+
+    // Hide image when not hovering
+    glitchProject.addEventListener("mouseleave", () => {
+      follower.style.display = "none";
+    });
+  </script>
+
+
+</body>
+
+
+
+</html>
