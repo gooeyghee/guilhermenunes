@@ -64,8 +64,8 @@ header {
     text-align: left;
 }
 
-.sketch {
-    position:absolute;
+#sketch {
+    position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
@@ -139,18 +139,39 @@ header {
     position: relative;
     width:100%;
     overflow:hidden;
-    transition: 0.5s;
     margin-bottom: 1%;
     padding-top: 0.5%;
     padding-bottom: 1%;
     color:white;
 }
 
+button {
+    background-color: black;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: white;
+    position: absolute;
+    color:white;
+    text-align: center;
+    top:75%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
 .project:hover {
     background-color: white;
-    transition: 0.5s;
     border-radius: 0px;
     color:black;
+}
+
+.project.is-toggled:hover {
+  background-color: black; /* fallback to default */
+  color: white;
+  cursor: default;
+}
+
+.project.is-toggled .projectdetails {
+  display: block;
 }
 
 .projecttitle {
@@ -162,6 +183,26 @@ header {
     font-weight: normal;
     font-size: 14pt;
     padding-left: 1%;
+}
+
+.projectdetails {
+    display: none;
+    background-color: black;
+    color: white;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.projectdetails.is-toggled {
+  display: block;
+}
+
+.show {
+    display: block;
+}
+
+.noshow {
+    display: none;
 }
 
 footer {

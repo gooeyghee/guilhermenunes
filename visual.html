@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>VISUAL</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-	<script src='https://unpkg.com/hydra-synth'></script>
+	<title> VISUAL </title>
 	<link rel="stylesheet" href="stylesheet.css">
 
 </head>
@@ -13,24 +11,36 @@
 	
 	<header>
         <div class="titlemenu" style="padding-left: 1%; font-size: 32pt;">
-           <a href="index.html"> GUILHERME NUNES  </a> >> VISUAL // <a href="about.html"> ABOUT </a> // <a href="audio.html"> AUDIO </a> </a>
+           <a href="index.html"> GUILHERME NUNES  </a> >> <span style="color:crimson;"> VISUAL </span> // <a href="about.html"> ABOUT </a> // <a href="audio.html"> AUDIO </a>
         </div>
 	</header>
 	
-	
-	
 	<section class="projects">
-		
-		
-		<div class="project" id="glitchProject">
-			<div class="projectpreview" id="follower"> <img src="media/visual/mesh.png"> </div>
-			<div class="projecttitle"> Glitching in Terminal </div>
-			<div class="projectdescription"> June 2025 // Digital Processes </div>
-		</div>
-		
+
 		<div class="project">
-			<div class="projecttitle"> Kuppel in Motion </div>
-			<div class="projectdescription"> May 2025 // Motion Design </div>
+			<div onclick="toggle(this)">
+				<div class="projecttitle">Glitching in Terminal</div>
+				<div class="projectdescription">June 2025 // Digital Processes </div>
+				<div class="projectdetails">
+
+					<div> <img src="media/visual/mesh.png"> </div>
+					<div style="padding-top: 1%;"> An exploration of different types of Glitching using the Windows Powershell terminal and Audacity.
+						<br>
+						In this project I explored three different types of data corruption:
+						<h2> Data Bending</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="project">
+			<div onclick="toggle(this)">
+				<div class="projecttitle">Kuppel in Motion</div>
+				<div class="projectdescription">June 2025 // Motion Design </div>
+				<div class="projectdetails">
+					An exploration of different types of Glitching using...
+				</div>
+			</div>
 		</div>
 		
 		<div class="project">
@@ -75,26 +85,42 @@
 		<div> guilhermejosenunes02@gmail.com </div>
     </footer>
 
-  <script>
-    const follower = document.getElementById("follower");
-    const glitchProject = document.getElementById("glitchProject");
+    <script>
+		function toggle(clickedElem) {
+		const details = clickedElem.querySelector('.projectdetails');
 
-    // Track mouse
-    document.addEventListener("mousemove", (e) => {
-      follower.style.left = e.clientX + 20 + "px";
-      follower.style.top = e.clientY + 20 + "px";
-    });
+		// If the clicked element has no .projectdetails, exit early
+		if (!details) return;
 
-    // Show image on hover
-    glitchProject.addEventListener("mouseenter", () => {
-      follower.style.display = "block";
-    });
+		const isAlreadyOpen = details.classList.contains('is-toggled');
 
-    // Hide image when not hovering
-    glitchProject.addEventListener("mouseleave", () => {
-      follower.style.display = "none";
-    });
-  </script>
+		// Close all open ones first
+		document.querySelectorAll('.projectdetails.is-toggled')
+			.forEach(el => el.classList.remove('is-toggled'));
+
+		// If it wasn't already open, open it
+		if (!isAlreadyOpen) {
+			details.classList.add('is-toggled');
+		}
+		}
+
+		function toggle(clickedElem) {
+		const project = clickedElem.closest('.project');
+
+		if (!project) return;
+
+		const isAlreadyOpen = project.classList.contains('is-toggled');
+
+		// Close all open ones
+		document.querySelectorAll('.project.is-toggled')
+			.forEach(p => p.classList.remove('is-toggled'));
+
+		// Re-open only if it wasn't already open
+		if (!isAlreadyOpen) {
+			project.classList.add('is-toggled');
+		}
+		}
+    </script>
 
 
 </body>

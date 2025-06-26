@@ -3,17 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>WELCOME</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-	<script src='https://unpkg.com/hydra-synth'></script>
 	<link rel="stylesheet" href="stylesheet.css">
 
 </head>
 
 <body>
 
-	<div>
-		<img src="media/index/10_heyowtf.gif" class="sketch"> </script>
-	</div>
+	<img src="media/index/10_heyowtf.gif" id="sketch" class="noshow">
 
 	<div class = "menubox">
 
@@ -25,8 +21,16 @@
 			<div> <a href="visual.html"> VISUAL </a> </div>
 		</div>
 		
-
 	</div>
+		
+	<button  onclick="animation()"> CLICK TO TOGGLE VIDEO <br> TW: Flashing Lights </button>
+
+	<script>
+		function animation() {
+		var element = document.getElementById("sketch");
+		element.classList.toggle("noshow");
+		}
+	</script>
 
 </body>
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>VISUAL</title>
+	<title>AUDIO</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 	<script src='https://unpkg.com/hydra-synth'></script>
 	<link rel="stylesheet" href="stylesheet.css">
@@ -20,13 +20,33 @@
 	<section class="projects">
 
 		<div class="project">
-			<div class="projecttitle"> The Magnetinator 9001  </div>
-			<div class="projectdescription"> June 2025 // Physical Computing </div>
+			<div onclick="toggle(this)">
+				<div class="projecttitle">The Magnetinator 9001</div>
+				<div class="projectdescription">June 2025 // Physical Computing </div>
+				<div class="projectdetails">
+		
+					<div>  <video width="320" height="240" controls>
+							<source src="media/audio/Gui_Raoul_Demovid - Trim.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+							</video> 
+					<div style="padding-top: 1%;"> A drone machine created by employing a self-propelling rotating motor connected to a distance sensor. The sound is then distorted with effect pedals to create soundscapes similar to other drone instruments like a tambura.
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="project">
+			<div onclick="toggle(this)">
 			<div class="projecttitle"> 100% organic natural grass-fed additive-free non-GMO regrown music  </div>
 			<div class="projectdescription"> February 2025 // Sound Design </div>
+				<div class="projectdetails">
+					<div>  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1243798225/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://backwardslogic.bandcamp.com/track/100-organic-natural-grass-fed-additive-free-non-gmo-regrown-music">100% organic natural grass-fed additive-free non-GMO regrown music by Backwards Logic</a></iframe>
+					<div style="padding-top: 1%;"> A sound collage composed of sounds recorded in an industrial environment.
+					</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<div class="project">
@@ -55,6 +75,42 @@
         <div> guilhermejosenunes02@gmail.com </div>
     </footer>
 
+    <script>
+		function toggle(clickedElem) {
+		const details = clickedElem.querySelector('.projectdetails');
+
+		// If the clicked element has no .projectdetails, exit early
+		if (!details) return;
+
+		const isAlreadyOpen = details.classList.contains('is-toggled');
+
+		// Close all open ones first
+		document.querySelectorAll('.projectdetails.is-toggled')
+			.forEach(el => el.classList.remove('is-toggled'));
+
+		// If it wasn't already open, open it
+		if (!isAlreadyOpen) {
+			details.classList.add('is-toggled');
+		}
+		}
+
+		function toggle(clickedElem) {
+		const project = clickedElem.closest('.project');
+
+		if (!project) return;
+
+		const isAlreadyOpen = project.classList.contains('is-toggled');
+
+		// Close all open ones
+		document.querySelectorAll('.project.is-toggled')
+			.forEach(p => p.classList.remove('is-toggled'));
+
+		// Re-open only if it wasn't already open
+		if (!isAlreadyOpen) {
+			project.classList.add('is-toggled');
+		}
+		}
+    </script>	
 
 </body>
 
