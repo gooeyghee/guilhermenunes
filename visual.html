@@ -24,10 +24,29 @@
 				<div class="projectdetails">
 
 					<div> <img src="media/visual/mesh.png"> </div>
-					<div style="padding-top: 1%;"> An exploration of different types of Glitching using the Windows Powershell terminal and Audacity.
+					<div style="padding-top: 1%;"> An exploration of different types of Glitching using the Windows Powershell terminal, various programs and Audacity.
 						<br>
-						In this project I explored three different types of data corruption:
+						In this project I explored three different types of glitching:
+						
 						<h2> Data Bending</h2>
+						By uploading the image's raw data into Audacity, one is capable of applying audio effects to the raw data and reinterpret it as visual data.
+						<br>
+						These manipulations produce an output that is very unpredictable and fragile.
+						<div style="padding-top: 1%; display: flex;"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/databending_invert.raw"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/databending_eq.raw"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/databending_eq_treble.raw"> </div>
+					
+						<h2> Data Corruption</h2>
+						Using Tobias Løfgren's <a href="https://github.com/tobloef/glitch-tool" style="text-decoration: underline;"> glitch tool</a>,  one can overwrite sections of an image, shuffle and delete byte ranges or inject new values into the raw data of an image.
+						<br>
+						The behaviour of the image formats varies differently, with JPEG providing the most interesting results.
+						<div style="padding-top: 1%; display: flex;"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/david_m=move_b=1000_s=3604021737668542602_n=1_i=3.jpg"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/david_m=zero_b=3_s=6410573657388021131_n=1_i=5.jpg"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/david_m=zero_b=6_s=2562468362590986530_n=1_i=1.jpg"> </div>
+					
+						<h2> Pixel Sorting </h2>
+						A more orderly way of glitching. Using GitHub satyarth's <a href="https://github.com/tobloef/glitch-tool" style="text-decoration: underline;"> pixelsort</a>,  the pixels of the image are sorted according to a specific property (eg. Lightness).
+						<div style="padding-top: 1%; display: flex;"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/pixel_sorting_edges.png"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/pixel_sorting_file_edges_90.png"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/pixel_sorting_random.png"> </div>
+					
+						<h2> Combinations </h2>
+						The last step was combining the three techniques.
+						<div style="padding-top: 1%; display: flex;"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/meliv_eq_m=zero_b=58_s=7951494078920101705_n=1_i=2.jpg"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/meliv_eq.raw"> <img style="padding-right: 1%;" src="media/visual/digitales entwerfen/wah_wah_random_m=zero_b=34_s=1498785990518648622_n=1_i=1.jpg"> </div>
 					</div>
 				</div>
 			</div>
