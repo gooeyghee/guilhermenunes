@@ -165,7 +165,7 @@ button {
 }
 
 .project.is-toggled:hover {
-  background-color: black; /* fallback to default */
+  background-color: black;
   color: white;
   cursor: default;
 }
