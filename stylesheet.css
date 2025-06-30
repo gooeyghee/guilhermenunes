@@ -11,13 +11,13 @@
 }
 
 a {
-    color:white;
+    color:#FAFAFA;
     text-decoration: none;
 }
 
 a:hover {
     color: crimson;
-    transition: 0.5s;
+    transition: 0.35s;
 }
 
 h2 {
@@ -26,14 +26,14 @@ h2 {
 }
 
 body {
-    background-color: black;
+    background-color: #212121;
     font-family: "Neue Haas Unica";
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: black;
+    background-color: #212121;
     position:fixed;
     left:0px;
     right:0px;
@@ -42,7 +42,7 @@ header {
 }
 
 .title {
-    color:black;;
+    color:#212121;;
     font-size: 36pt;
     position: relative;
     justify-content: center;
@@ -51,13 +51,13 @@ header {
 }
 
 .titlemenu {
-    color:white;;
+    color:#FAFAFA;;
     font-size: 36pt;
     position: relative;
 }
 
 .nameheader {
-    color:black;;
+    color:#212121;;
     font-size: 24pt;
     position: relative;
     align-items: left;
@@ -74,7 +74,7 @@ header {
 }
 
 .menu {
-    color: white;
+    color: #FAFAFA;
     text-align: center;
     font-size: 14pt;
     display:flex;
@@ -84,7 +84,7 @@ header {
 }
 
 .menuheader {
-    color: black;
+    color: #212121;
     text-align: center;
     font-size: 14pt;
     display:flex;
@@ -93,7 +93,7 @@ header {
 }
 
 .menubox {
-    background-color: white;
+    background-color: #FAFAFA;
     position: absolute;
     align-content: center;
     padding-left: 1%;
@@ -104,7 +104,7 @@ header {
 }
 
 .menu > div {
-    background-color: black;
+    background-color: #212121;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -112,7 +112,7 @@ header {
 }
 
 .menu > li {
-    background-color: black;
+    background-color: #212121;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -132,26 +132,26 @@ header {
 }
 
 .project {
-    background-color: black;
+    background-color: #212121;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    border-color: white;
+    border-color: #FAFAFA;
     position: relative;
     width:100%;
     overflow:hidden;
     margin-bottom: 1%;
     padding-top: 0.5%;
     padding-bottom: 1%;
-    color:white;
+    color:#FAFAFA;
 }
 
 button {
-    background-color: black;
+    background-color: #212121;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    border-color: white;
+    border-color: #FAFAFA;
     position: absolute;
-    color:white;
+    color:#FAFAFA;
     text-align: center;
     top:75%;
     left:50%;
@@ -159,14 +159,14 @@ button {
 }
 
 .project:hover {
-    background-color: white;
-    border-radius: 0px;
-    color:black;
+    background-color: #FAFAFA;
+    transition: 0.25s;
+    color:#212121;
 }
 
 .project.is-toggled:hover {
-  background-color: black; /* fallback to default */
-  color: white;
+  background-color: #212121;
+  color: #FAFAFA;
   cursor: default;
 }
 
@@ -187,10 +187,11 @@ button {
 
 .projectdetails {
     display: none;
-    background-color: black;
-    color: white;
+    background-color: #212121;
+    color: #FAFAFA;
     padding-left: 1%;
     padding-top: 1%;
+    font-size: 24pt;
 }
 
 .projectdetails.is-toggled {
@@ -206,14 +207,14 @@ button {
 }
 
 footer {
-    background-color: black;
+    background-color: #212121;
     position: sticky;
     width:100%;
     left:0;
     bottom:0;
     font-size: 18pt;
     text-align: right;
-    color:white;
+    color:#FAFAFA;
 }
 
 footer > div {
