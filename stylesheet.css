@@ -30,7 +30,7 @@ body {
     font-family: "Neue Haas Unica";
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
