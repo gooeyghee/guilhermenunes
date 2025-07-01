@@ -30,6 +30,7 @@ body {
     font-family: "Neue Haas Unica";
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 header {
@@ -177,12 +178,20 @@ button {
 .projecttitle {
     font-size: 32pt;
     padding-left: 1%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .projectdescription {
     font-weight: normal;
     font-size: 14pt;
     padding-left: 1%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .projectdetails {
